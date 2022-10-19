@@ -1,6 +1,6 @@
 import random
 
-#The code below is to ensure that the values remain same over different executions.
+#The seed value below ensures that the random values remain same over different executions.
 random.seed(0)
 
 lifts = [random.randint(-2,50), random.randint(-2,50), random.randint(-2,50)]
@@ -28,7 +28,7 @@ elif diff[1]>diff[0] and weights[0]<550:
     print("Lift 1 is coming for you. Please wait.")
 
 #The else statement here helps to choose a lift in-case any two lifts 
-#are in the same situation, like, having same floor and/or and weights
+#are in the same situation, like, having same floor and/or weights
 else:
     lifts[random_lift] = button
     weights[random_lift] = random.randint(25,120)
@@ -42,4 +42,4 @@ print("Lifts' current weight:", weights)
 print("Your current floor:", button)
 print("Random lift number is:", random_lift)
 print("closest lift values are:", diff)
-print("The lift sent if :", lift_sent)
+print("The lift sent is :", lift_sent)
