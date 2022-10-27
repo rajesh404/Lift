@@ -3,6 +3,7 @@ import random
 #The code below is to ensure that the values remain same over different executions.
 random.seed(0)
 
+#Iintialising variables
 lifts = [random.randint(-2,50), random.randint(-2,50), random.randint(-2,50)]
 weights = [random.randint(25,500), random.randint(25,500), random.randint(25,500)]
 button = int(input())
@@ -35,6 +36,7 @@ else:
     lift_sent = "number "+random_lift
     print("Lift",random.randint(1,2), "is coming for you. Please wait")
 
+#Printing output in terminal
 print()
 print("------Below are some useful data------")
 print("Lifts' current floor: ",lifts)
